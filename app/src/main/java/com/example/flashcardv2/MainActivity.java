@@ -22,11 +22,13 @@ public class MainActivity extends Activity {
 
     static HashMap<String, String> termsAndDefinitions = new HashMap<>();
 
+    //key for Intent
     static String EXTRA_TERM = "cardTerm";
     static String EXTRA_DEFINITION = "cardDefinition";
 
-    ListView listView;
-    TextView termView;
+    //xml elements
+    ListView listView;  //view to list terms
+    TextView termView;  //view for single term
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
